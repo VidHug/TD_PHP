@@ -28,6 +28,7 @@
 		$query = 'select * from film';
 		$res = $dblink->TabResSQL($query);
 		$res[0]['dateSortie'] = formatDate($res[0]['dateSortie']);
+		$res[0]['notation'] = number_format($res[0]['notation'],1);
 		return $res[0];
 	}
 

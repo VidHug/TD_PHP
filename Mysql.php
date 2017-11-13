@@ -38,6 +38,7 @@ class Mysql{
         if(!$this->link && $this->debogue)
             throw new MySQLExeption(' Erreur de connexion au serveur MySql!!! ');
         $base = mysqli_select_db($this->link, $this->data_base);
+        mysqli_set_charset($this->link, 'utf8');
         if (!$base && $this->debogue)
             throw new MySQLExeption(' Erreur de connexion à la base de donnees!!! ');
     }
