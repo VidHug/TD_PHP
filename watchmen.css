@@ -13,7 +13,7 @@
 }
 
 body {
-	background-color: #06407b;
+	/*background-color: #06407b;*/
 	width: 100%;
 }
 
@@ -21,13 +21,13 @@ body {
 
 h1, section {
 	width: 70vw;
-	background-color: #0c63a3;
+	/*background-color: #0c63a3;*/
 	margin-right: auto;
 	margin-left: auto;
 }
 
 h1{
-	color: #fde800;
+	/*color: #fde800;*/
 	font-family: 'PoliceFilm';
 	font-size: 4vw;
 	padding-top: 5vh;
