@@ -106,8 +106,24 @@ img {
 	margin-left: 7vh;
 }
 
+/* MENU ACTEUR */
+
 #menu_acteur img {
 	margin-left: 2vw;
 	width: 7vw;
 	height: 15vh;
+}
+
+#menu_acteur a {
+	color: black;
+	text-decoration: none;
+}
+
+#menu_acteur a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+#menu_acteur a:hover {
+	text-decoration: underline;
 }
