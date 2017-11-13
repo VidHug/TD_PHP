@@ -1,3 +1,3 @@
 <?php
-	require_once 'util.php';
-	getBlock('film.php');
+	header('Location: http://hugovidal.fr/film_watchmen/film.php');
+	exit;
