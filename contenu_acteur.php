@@ -8,7 +8,7 @@
   <?php
     $tab = $data['photoActeurs'];
     foreach($tab as $photo) {
-      echo '<a href="acteur.php?nom=' . $photo['nom'] . '"><img src="' . $photo['chemin'] . '"></a>' . "\n";
+      echo '<a href="acteur.php?nom=' . $photo['nom'] . '"><img src="' . $photo['chemin'] . '"><label>' . $photo['legende'] . '</label></a>' . "\n";
     }
     echo "\n";
   ?>

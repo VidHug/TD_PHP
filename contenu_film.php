@@ -58,7 +58,7 @@
     <?php
       $tab = $data['photoActeurs'];
       foreach ($tab as $image) {
-        echo '<a href="acteur.php?nom=' . $image['nom'] . '"><img src="' . $image['chemin'] . '" class="img_pers"></a><label>' . $image['legende'] . '</label>' . "\n";
+        echo '<a href="acteur.php?nom=' . $image['nom'] . '"><img src="' . $image['chemin'] . '" class="img_pers"><label>' . $image['legende'] . '</label></a>' . "\n";
       }
     ?>
 	</section>
