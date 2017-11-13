@@ -105,3 +105,9 @@ li{
 img {
 	margin-left: 7vh;
 }
+
+#menu_acteur img {
+	margin-left: 2vw;
+	width: 7vw;
+	height: 15vh;
+}

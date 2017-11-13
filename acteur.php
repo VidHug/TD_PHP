@@ -5,6 +5,7 @@
   $data = array();
   $data['infoFilm'] = getFilm();
   $data['infoActeur'] = getActeur($_GET['nom']);
+  $data['photoActeurs'] = getPhotoPersonne('acteur');
 
   getBlock('begin.html');
   

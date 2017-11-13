@@ -2,7 +2,18 @@
   <?php getBlock('header.html'); ?>
 
 	<h1>Acteur</h1>
+
   <section>
+  <nav id="menu_acteur">
+  <?php
+    $tab = $data['photoActeurs'];
+    foreach($tab as $photo) {
+      echo '<a href="acteur.php?nom=' . $photo['nom'] . '"><img src="' . $photo['chemin'] . '"></a>' . "\n";
+    }
+    echo "\n";
+  ?>
+  </nav>
+
     <h2><?php
           $info = $data['infoActeur'];
           echo $info['prenom'] . ' ' . $info['nom'];
@@ -19,6 +30,6 @@
     <h3>Biographie</h3>
     <p><?php echo $data['infoActeur']['biographie'] ?></p>
   </section>
-  
+
   <?php getBlock('footer.html'); ?>
 </body>
