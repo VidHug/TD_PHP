@@ -20,7 +20,7 @@
 	}
 
 	function getBlock($file,$data = []){
-		require $file;
+		require_once $file;
 	}
 
 	function getFilm(){
