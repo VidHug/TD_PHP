@@ -1,0 +1,94 @@
+/* GENERAL */
+
+/* couleurs : jaune = #fde800, vert = #087862, bleu clair = #0c63a3, bleu foncé = #06407b */
+
+@font-face {
+    font-family: 'PoliceFilm';
+    src: url('theboldfont.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #06407b;
+	width: 100%;
+}
+
+/* CORPS */
+
+h1, section {
+	width: 70vw;
+	background-color: #0c63a3;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h1{
+	color: #fde800;
+	font-family: 'PoliceFilm';
+	font-size: 4vw;
+	padding-top: 5vh;
+	padding-bottom: 2vh;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'PoliceFilm';
+	margin-left: 2vw;
+	padding-bottom: 3vh;
+	padding-top: 8vh;
+}
+
+.list_act, .info_rea, .list_img_film {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-family: sans-serif;
+	margin-bottom: 3vh;
+}
+
+/* PUCES */
+
+ol {
+	list-style-type: none;
+	font-family: sans-serif;
+}
+
+section > ol {
+	margin-left: 4vw;
+}
+
+section > ol > li {
+	margin-top: 1vh;
+}
+
+ol li ol {
+	padding-left: 30px;
+}
+
+li{
+	width: 45vw;
+}
+
+/* IMAGES */
+
+.img_horizontale {
+	width: 40vw;
+}
+
+.img_verticale {
+	width: 20vw;
+}
+
+.list_act img, .info_rea img, .img_pers {
+	width: 13vw;
+}
+
+img {
+	margin-left: 7vh;
+}
