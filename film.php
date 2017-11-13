@@ -44,7 +44,9 @@
       <?php
         $tab = getPhotoFilm();
         foreach ($tab as $image) {
-          if (getimagesize($image['chemin'])[0] < getimagesize($image['chemin'])[1]){
+          $largeur = getimagesize($image['chemin'])[0];
+          $hauteur = getimagesize($image['chemin'])[1];
+          if ($largeur < ($hauteur * 1.4)){
             $class = 'img_verticale';
           } else {
             $class = 'img_horizontale';
