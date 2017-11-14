@@ -2,7 +2,7 @@
   <?php getBlock('header.html'); ?>
   
 	<h1>Réalisateur</h1>
-  <section>
+  <section class="info_personne">
     <h2><?php
           $info = $data['infoRealisateur'];
           echo $info['prenom'] . ' ' . $info['nom'];
@@ -18,6 +18,7 @@
     <?php echo '<img src="' . $data['photoRealisateur']['chemin'] .  '" class="img_pers">' ?>
     <h3>Biographie</h3>
     <p><?php echo $data['infoRealisateur']['biographie'] ?></p>
+    <h3>Filmographie</h3>
     <table>
       <tr>
         <td>Date</td><td>Film</td>

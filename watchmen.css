@@ -77,6 +77,41 @@ h2 {
 	font-size: 2vw;
 }
 
+h3 {
+	margin-left: 2vw;
+	font-family: 'PoliceFilm';
+	padding-bottom: 3vh;
+	padding-top: 8vh;
+	font-size: 1.8vw;
+}
+
+.info_personne {
+	height: 100%;
+}
+
+.info_personne img {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.info_personne p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 55vw;
+	font-size: 20px;
+	margin-left: 7vh;
+}
+
+.info_personne table {
+	margin-bottom: 20px;
+	font-size: 20px;
+	margin-left: 7vh;
+}
+
+.info_personne table > tbody > tr:nth-child(1){
+	font-size: 30px;
+}
+
 .list_act, .info_rea, .list_img_film {
 	display: flex;
 	flex-direction: column;

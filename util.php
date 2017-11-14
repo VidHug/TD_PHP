@@ -63,3 +63,13 @@
 		$query = "select nom,chemin, legende from photo p, personne_has_photo php, film_has_personne fhp, personne pr where fhp.role='$role' and fhp.id_personne=php.id_personne and php.id_photo=p.id and pr.id=php.id_personne";
 		return $dblink->TabResSQL($query);
 	}
+
+	function getFilmographie($nom) {
+		$dblink = new Mysql('db708477891.db.1and1.com','db708477891','dbo708477891','Fairytail21!');
+		$query = "select dateSortie, titre from film f, film_has_personne fhp, personne p where p.nom='$nom' and p.id=fhp.id_personne and fhp.id_film=f.id";
+		$res = $dblink->TabResSQL($query);
+		for($i = 0; $i < count($res); ++$i){
+			$res[$i]['dateSortie'] = substr($res[$i]['dateSortie'], 0, 4);
+		}
+		return $res;
+	}

@@ -6,6 +6,7 @@
   $data['infoFilm'] = getFilm();
   $data['infoRealisateur'] = getPersonne('realisateur')[0];
   $data['photoRealisateur'] = getPhotoPersonne('realisateur')[0];
+  $data['filmographie'] = getFilmographie($_GET['Snyder']);
 
   getBlock('begin.html');
   
