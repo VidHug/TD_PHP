@@ -74,6 +74,7 @@ h2 {
 	margin-left: 2vw;
 	padding-bottom: 3vh;
 	padding-top: 8vh;
+	font-size: 2vw;
 }
 
 .list_act, .info_rea, .list_img_film {
@@ -89,7 +90,7 @@ label {
 br {
 	content: "";
  	display: block;
- 	margin-bottom: 1rem;
+ 	margin-bottom: 10px;
 }
 
 /* PUCES */
@@ -104,7 +105,7 @@ section > ol {
 }
 
 section > ol > li {
-	margin-top: 1vh;
+	margin-top: 2vh;
 }
 
 ol li ol {
@@ -112,7 +113,8 @@ ol li ol {
 }
 
 li{
-	width: 45vw;
+	width: 55vw;
+	font-size: 20px;
 }
 
 /* IMAGES */
@@ -129,9 +131,27 @@ li{
 	width: 13vw;
 }
 
-.list_act a {
+.list_act a, .info_rea a {
 	color: black;
 	text-decoration: none;
+	font-size: 20px;
+}
+
+.list_act a label, .info_rea a label {
+	margin-left: 20px;
+}
+
+.list_act a > *, .info_rea a > * {
+	vertical-align: middle;
+}
+
+.info_rea a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.info_rea a:hover {
+	text-decoration: underline;
 }
 
 .list_act a:visited {
@@ -147,8 +167,18 @@ li{
 	padding-bottom: 5vh
 }
 
+.list_act a {
+	margin-top: 20px;
+}
+
 img {
 	margin-left: 7vh;
+}
+
+.list_img_film label {
+	margin-left: 7vh;
+	margin-top: 1vh;
+	font-size: 20px;
 }
 
 /* MENU ACTEUR */

@@ -22,7 +22,7 @@
   			</ol>
   		</li>
   		<li>Synopsis : <p><?php echo $data['infoFilm']['synopsis'] ?></p></li>
-  		<li>Note : <?php echo $data['infoFilm']['notation'] ?>/5</li>
+  		<li>Note : <?php echo $data['infoFilm']['notation'] ?>/5 <meter value="<?php echo $data['infoFilm']['notation'] ?>" min="0" max="5" ></meter></li>
   	</ol>
 	</section>
 
@@ -44,17 +44,17 @@
 	</section>
 
 	<section class="info_rea">
-		<h2>Apperçu du réalisateur</h2>
+		<h2>Aperçu du réalisateur</h2>
     <?php
       $tab = $data['photoRealisateur'];
       foreach ($tab as $image) {
-        echo '<a href="realisateur.php"><img src="' . $image['chemin'] . '"></a><label>' . $image['legende'] . '</label>' . "\n";
+        echo '<a href="realisateur.php"><img src="' . $image['chemin'] . '"><label>' . $image['legende'] . '</label></a>' . "\n";
       }
     ?>
 	</section>
 
 	<section class="list_act">
-		<h2>Apperçu des acteurs</h2>
+		<h2>Aperçu des acteurs</h2>
     <?php
       $tab = $data['photoActeurs'];
       foreach ($tab as $image) {
