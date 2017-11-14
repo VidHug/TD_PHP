@@ -5,13 +5,21 @@
 
   <section>
   <nav id="menu_acteur">
-  <?php
-    $tab = $data['photoActeurs'];
-    foreach($tab as $photo) {
-      echo '<a href="acteur.php?nom=' . $photo['nom'] . '"><img src="' . $photo['chemin'] . '"><label>' . $photo['legende'] . '</label></a>' . "\n";
-    }
-    echo "\n";
-  ?>
+    <table>
+    <?php
+      $tab = $data['photoActeurs'];
+      echo "<tr>\n";
+      foreach($tab as $photo) {
+        echo '<td><a href="acteur.php?nom=' . $photo['nom'] . '"><img src="' . $photo['chemin'] . '"></a></td>' . "\n";
+      }
+      echo "</tr>\n";
+      echo "<tr>\n";
+      foreach($tab as $photo) {
+        echo '<td><a href="acteur.php?nom=' . $photo['nom'] . '"><label>' . $photo['legende'] . '</label></a></td>' . "\n";
+      }
+      echo "</tr>\n";
+    ?>
+    </table>
   </nav>
 
     <h2><?php

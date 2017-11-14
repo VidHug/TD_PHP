@@ -13,22 +13,49 @@
 }
 
 body {
-	/*background-color: #06407b;*/
+	background-color: #6c1110;
 	width: 100%;
 }
 
 /* HEADER */
 
 header {
+	background-color: #06407b;
+	color: white;
+	padding-top: 5vh;
+	height: 4vh;
 	text-align: center;
-	font-size: 30px;
+}
+
+header label {
+	font-family: 'PoliceFilm';
+	position: absolute;
+	margin: 0;
+	left: 5vw;
+	top: 2vh;
+	font-size: 3vw;
+}
+
+header a {
+	font-family: 'PoliceFilm';
+	padding-right: 20px;
+	font-size: 2vw;
+	color: white;
+}
+
+header a:hover {
+	color: white;
+}
+
+header a:visited {
+	color: white;
 }
 
 /* CORPS */
 
 h1, section {
 	width: 70vw;
-	/*background-color: #0c63a3;*/
+	background-color: white;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -102,16 +129,33 @@ li{
 	width: 13vw;
 }
 
+.list_act a {
+	color: black;
+	text-decoration: none;
+}
+
+.list_act a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.list_act a:hover {
+	text-decoration: underline;
+}
+
+.list_act {
+	padding-bottom: 5vh
+}
+
 img {
 	margin-left: 7vh;
 }
 
 /* MENU ACTEUR */
 
-#menu_acteur img {
+#menu_acteur img, #menu_acteur label {
 	margin-left: 2vw;
 	width: 7vw;
-	height: 15vh;
 }
 
 #menu_acteur a {
@@ -126,4 +170,19 @@ img {
 
 #menu_acteur a:hover {
 	text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: grey;
+	font-family: 'PoliceFilm';
+	padding-top: 5px;
+}
+
+#fleche {
+	width: 4%;
+	position: fixed;
+	top: 90%;
+	right: 1rem;
 }
