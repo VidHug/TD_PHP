@@ -4,7 +4,7 @@
         <ol>
             <?php
                 foreach ($data['films'] as $film){
-                    echo '<li><a href="film.php?id="' . $film['id'] . '><img class="img_verticale" src="' . $film['chemin'] . '"><label>' . $film['titre'] . '</label></a>';
+                    echo '<li><a href="film.php?id=' . $film['id'] . '"><img class="img_verticale" src="' . $film['chemin'] . '"><label>' . $film['titre'] . '</label></a>';
                     echo "\n";
                 }
             ?>

@@ -29,9 +29,9 @@
         return $res = $dblink->TabResSQL($query);
     }
 
-	function getFilm(){
+	function getFilm($id){
 		$dblink = new Mysql('db708477891.db.1and1.com','db708477891','dbo708477891','Fairytail21!');
-		$query = 'select * from film';
+		$query = "select * from film where id=$id";
 		$res = $dblink->TabResSQL($query);
 		$res[0]['dateSortie'] = formatDate($res[0]['dateSortie']);
 		$res[0]['notation'] = number_format($res[0]['notation'],1);

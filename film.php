@@ -3,7 +3,7 @@
   require_once('util.php');
 
   $data = array();
-  $data['infoFilm'] = getFilm();
+  $data['infoFilm'] = getFilm($_GET['id']);
   $data['infoRealisateur'] = getPersonne('realisateur')[0];
   $data['infoActeur'] = getPersonne('acteur');
   $data['photoFilm'] = getPhotoFilm();
