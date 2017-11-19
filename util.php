@@ -23,6 +23,12 @@
 		require_once $file;
 	}
 
+	function getIntroFilm(){
+        $dblink = new Mysql('db708477891.db.1and1.com','db708477891','dbo708477891','Fairytail21!');
+        $query = "select f.id,titre,chemin from film f, film_has_photo fhp, photo p where f.id=fhp.id_film and fhp.id_photo=p.id and fhp.role='affiche'";
+        return $res = $dblink->TabResSQL($query);
+    }
+
 	function getFilm(){
 		$dblink = new Mysql('db708477891.db.1and1.com','db708477891','dbo708477891','Fairytail21!');
 		$query = 'select * from film';
@@ -32,9 +38,9 @@
 		return $res[0];
 	}
 
-	function getPersonne($role){
+	function getPersonne($role,$nom){
 		$dblink = new Mysql('db708477891.db.1and1.com','db708477891','dbo708477891','Fairytail21!');
-		$query = "select * from personne p join film_has_personne f on p.id=f.id_personne where f.role='$role'";
+		$query = "select * from personne p join film_has_personne f on p.id=f.id_personne where p.nom='$nom' and f.role='$role'";
 		$res = $dblink->TabResSQL($query);
 		for ($i = 0; $i < count($res); ++$i) {
 			$res[$i]['dateNaissance'] = formatDate($res[$i]['dateNaissance']);
