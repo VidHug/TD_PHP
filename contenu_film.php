@@ -1,5 +1,5 @@
 <body>
-  <?php getBlock('header.html'); ?>
+  <?php getBlock('header.php'); ?>
 
   <h1><?php echo $data['infoFilm']['titre'] ?></h1>
 	<section>

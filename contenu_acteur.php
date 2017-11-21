@@ -1,5 +1,5 @@
 <body>
-  <?php getBlock('header.html'); ?>
+  <?php getBlock('header.php'); ?>
 
 	<h1>Acteur</h1>
 
