@@ -7,7 +7,7 @@
   $data = array();
   $data['infoFilm'] = getFilm($idFilm);
   $data['photoFilm'] = getPhotoFilm($idFilm);
-  $data['infoRealisateur'] = getParticipant('realisateur',$idFilm);
+  $data['infoRealisateur'] = getParticipant('realisateur',$idFilm)[0];
   $data['infoActeur'] = getParticipant('acteur',$idFilm);
   
   getBlock('begin.html');

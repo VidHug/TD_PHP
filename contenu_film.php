@@ -46,17 +46,15 @@
 	<section class="info_rea">
 		<h2>Aperçu du réalisateur</h2>
     <?php
-      $tab = $data['infoRealisateur'];
-      foreach ($tab as $image) {
-        echo '<a href="realisateur.php"><img src="' . $image['chemin'] . '"><label>' . $image['legende'] . '</label></a>' . "\n";
-      }
+      $image = $data['infoRealisateur'];
+      echo '<a href="realisateur.php"><img src="' . $image['chemin'] . '"><label>' . $image['legende'] . '</label></a>' . "\n";
     ?>
 	</section>
 
 	<section class="list_act">
 		<h2>Aperçu des acteurs</h2>
     <?php
-      $tab = $data['infoActeurs'];
+      $tab = $data['infoActeur'];
       foreach ($tab as $image) {
         echo '<a href="acteur.php?nom=' . $image['nom'] . '"><img src="' . $image['chemin'] . '" class="img_pers"><label>' . $image['legende'] . '</label></a>' . "\n";
       }
