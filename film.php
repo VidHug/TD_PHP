@@ -5,6 +5,7 @@
   $idFilm = $_GET['id'];
 
   $data = array();
+  $data['titrePage'] = getFilm($idFilm)['titre'];
   $data['infoFilm'] = getFilm($idFilm);
   $data['photoFilm'] = getPhotoFilm($idFilm);
   $data['infoRealisateur'] = getParticipant('realisateur',$idFilm)[0];

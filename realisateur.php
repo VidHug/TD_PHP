@@ -2,11 +2,13 @@
 
   require_once('util.php');
 
+  $nomP = $_GET['nom'];
+
   $data = array();
-  $data['infoFilm'] = getFilm();
-  $data['infoRealisateur'] = getPersonne('realisateur')[0];
-  $data['photoRealisateur'] = getPhotoPersonne('realisateur')[0];
-  $data['filmographie'] = getFilmographie($_GET['Snyder']);
+  $x = getPersonne($nomP)[0];
+  $data['titrePage'] = $x['prenom'] . ' ' . $x['nom'];
+  $data['infoRealisateur'] = getPersonne($nomP)[0];
+  $data['filmographie'] = getFilmographie($nomP);
 
   getBlock('begin.html');
   

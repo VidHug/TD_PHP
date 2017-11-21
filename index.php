@@ -3,7 +3,7 @@
     require_once('util.php');
 
     $data = array();
-    $data['infoFilm']['titre'] = 'Hugo Ciné';
+    $data['titrePage'] = 'Hugo Ciné';
     $data['films'] = getIntroFilm();
 
     getBlock('begin.html');
