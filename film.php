@@ -2,13 +2,13 @@
   
   require_once('util.php');
 
+  $idFilm = $_GET['id'];
+
   $data = array();
-  $data['infoFilm'] = getFilm($_GET['id']);
-  $data['infoRealisateur'] = getPersonne('realisateur')[0];
-  $data['infoActeur'] = getPersonne('acteur');
-  $data['photoFilm'] = getPhotoFilm();
-  $data['photoRealisateur'] = getPhotoPersonne('realisateur');
-  $data['photoActeurs'] = getPhotoPersonne('acteur');
+  $data['infoFilm'] = getFilm($idFilm);
+  $data['photoFilm'] = getPhotoFilm($idFilm);
+  $data['infoRealisateur'] = getParticipant('realisateur',$idFilm);
+  $data['infoActeur'] = getParticipant('acteur',$idFilm);
   
   getBlock('begin.html');
   
