@@ -19,11 +19,12 @@
     <h3>Biographie</h3>
     <p><?php echo $data['infoPersonne']['biographie'] ?></p>
     <h3>Filmographie</h3>
-    <table>
+    <table id="id_filmogrphie">
       <?php
         foreach($data['filmographie'] as $film){
             echo '<tr>' . "\n";
-            echo '<td><img src="' . $film['chemin'] . '"></td><td>' . $film['titre'] . '</td>' . "\n";
+            echo '<td><a href="http://hugovidal.fr/td_film/film.php?id=' . $film['id'] . '"><img src="' . $film['chemin'] . '"></a></td>';
+            echo '<td><a href="http://hugovidal.fr/td_film/film.php?id=' . $film['id'] . '">' . $film['titre'] . '</a></td>' . "\n";
             echo '</tr>' . "\n";
         }
       ?>
