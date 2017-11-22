@@ -1,23 +1,23 @@
 <body>
   <?php getBlock('header.php'); ?>
   
-	<h1>Réalisateur</h1>
+	<h1><?php
+        $info = $data['infoPersonne'];
+        echo $info['prenom'] . ' ' . $info['nom'];
+        ?></h1>
   <section class="info_personne">
-    <h2><?php
-          $info = $data['infoRealisateur'];
-          echo $info['prenom'] . ' ' . $info['nom'];
-        ?></h2>
+    <h2>Informations générales</h2>
     <ol>
       <?php
-          $info = $data['infoRealisateur'];
+          $info = $data['infoPersonne'];
           echo '<li>Prenom : ' . $info['prenom'] . "</li>\n
           <li>Nom : " . $info['nom'] . "</li>\n";
       ?>
-      <li>Date de naissance : <?php echo $data['infoRealisateur']['dateNaissance'] ?></li>
+      <li>Date de naissance : <?php echo $data['infoPersonne']['dateNaissance'] ?></li>
     </ol>
-    <?php echo '<img src="' . $data['infoRealisateur']['chemin'] .  '" class="img_pers">' ?>
+    <?php echo '<img src="' . $data['infoPersonne']['chemin'] .  '" class="img_pers">' ?>
     <h3>Biographie</h3>
-    <p><?php echo $data['infoRealisateur']['biographie'] ?></p>
+    <p><?php echo $data['infoPersonne']['biographie'] ?></p>
     <h3>Filmographie</h3>
     <table>
       <?php

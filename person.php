@@ -7,13 +7,13 @@
   $data = array();
   $x = getPersonne($nomP)[0];
   $data['titrePage'] = $x['prenom'] . ' ' . $x['nom'];
-  $data['infoRealisateur'] = getPersonne($nomP)[0];
+  $data['infoPersonne'] = getPersonne($nomP)[0];
   $data['filmographie'] = getFilmographie($nomP);
 
   getBlock('begin.html');
   
   getBlock('head.php',$data);
 
-  getBlock('contenu_realisateur.php',$data);
+  getBlock('contenu_person.php',$data);
 
   getBlock('end.html');
