@@ -59,6 +59,7 @@
         echo '<a href="person.php?nom=' . $image['nom'] . '"><img src="' . $image['chemin'] . '" class="img_pers"><label>' . $image['legende'] . '</label></a>' . "\n";
       }
     ?>
+        <a href="#header"><img id="fleche" src="image/fleche.png"></a>
 	</section>
 
   <?php getBlock('footer.html'); ?>

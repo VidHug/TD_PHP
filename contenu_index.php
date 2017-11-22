@@ -11,6 +11,7 @@
             }
             ?>
         </table>
+        <a href="#titreIndex"><img id="fleche" src="image/fleche.png"></a>
     </section>
 
     <?php getBlock('footer.html'); ?>

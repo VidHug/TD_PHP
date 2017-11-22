@@ -29,6 +29,8 @@
         }
       ?>
     </table>
+    <a href="#header"><img id="fleche" src="image/fleche.png"></a>
   </section>
+
   <?php getBlock('footer.html'); ?>
 </body>
