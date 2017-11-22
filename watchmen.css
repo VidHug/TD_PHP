@@ -36,22 +36,33 @@ header label {
 	font-size: 3vw;
 }
 
-header a {
+header label > a {
+	color: white;
+	text-decoration: none;
+}
+
+header > a {
 	font-family: 'PoliceFilm';
 	padding-right: 20px;
 	font-size: 2vw;
 	color: white;
 }
 
-header a:hover {
+header > a:hover {
 	color: white;
 }
 
-header a:visited {
+header > a:visited {
 	color: white;
 }
 
 /* CORPS */
+
+#titreIndex {
+	background-color: #06407b;
+	font-size: 8vw;
+	color: white;
+}
 
 h1, section {
 	width: 70vw;
@@ -102,16 +113,6 @@ h3 {
 	margin-left: 7vh;
 }
 
-.info_personne table {
-	margin-bottom: 20px;
-	font-size: 20px;
-	margin-left: 7vh;
-}
-
-.info_personne table > tbody > tr:nth-child(1){
-	font-size: 30px;
-}
-
 .list_act, .info_rea, .list_img_film {
 	display: flex;
 	flex-direction: column;
@@ -126,6 +127,34 @@ br {
 	content: "";
  	display: block;
  	margin-bottom: 10px;
+}
+
+/* TABLE */
+
+table {
+	margin-bottom: 20px;
+	margin-left: 7vh;
+	padding-top: 5vh;
+}
+
+table td {
+	padding-right: 5vw;
+}
+
+table a {
+	color: black;
+	text-decoration: none;
+	font-size: 2vw;
+}
+
+table a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+table a:hover {
+	color: black;
+	text-decoration: underline;
 }
 
 /* PUCES */
@@ -216,7 +245,7 @@ img {
 	font-size: 20px;
 }
 
-/* MENU ACTEUR */
+/* MENU ACTEUR
 
 #menu_acteur img, #menu_acteur label {
 	margin-left: 2vw;
@@ -235,7 +264,7 @@ img {
 
 #menu_acteur a:hover {
 	text-decoration: underline;
-}
+} */
 
 /* FOOTER */
 

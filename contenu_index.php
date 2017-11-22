@@ -1,14 +1,16 @@
 <body>
-    <h1>Hugo Ciné</h1>
+    <h1 id="titreIndex">Hugo Ciné</h1>
     <section>
-        <ol>
+        <table id="id_filmogrphie">
             <?php
-                foreach ($data['films'] as $film){
-                    echo '<li><a href="film.php?id=' . $film['id'] . '"><img class="img_verticale" src="' . $film['chemin'] . '"><label>' . $film['titre'] . '</label></a>';
-                    echo "\n";
-                }
+            foreach($data['films'] as $film){
+                echo '<tr>' . "\n";
+                echo '<td><a href="http://hugovidal.fr/td_film/film.php?id=' . $film['id'] . '"><img class="img_verticale" src="' . $film['chemin'] . '"></a></td>';
+                echo '<td><a href="http://hugovidal.fr/td_film/film.php?id=' . $film['id'] . '">' . $film['titre'] . '</a></td>' . "\n";
+                echo '</tr>' . "\n";
+            }
             ?>
-        </ol>
+        </table>
     </section>
 
     <?php getBlock('footer.html'); ?>
