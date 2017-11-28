@@ -22,6 +22,12 @@
         return $dblink->TabResSQL($query);
     }
 
+    function getAllNom($table){
+        $dblink = new Mysql('db708477891.db.1and1.com','db708477891','dbo708477891','Fairytail21!');
+        $query = "select nom from " . $table;
+        return $dblink->TabResSQL($query);
+    }
+
 	function formatDate($date){
 		$mois = array('janvier','février','mars','avril','mai','juin','juillet','aout','septembre','octobre','novembre','decembre');
 		$res = $date[8] . $date[9] . ' ';

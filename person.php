@@ -2,7 +2,18 @@
 
   require_once('util.php');
 
+  function checkNomUrl($nom,$table){
+      $listNom = getAllNom($table);
+      foreach ($listNom as $real){
+          if($real['nom'] == $nom){
+              return;
+          }
+      }
+      header('Location: http://hugovidal.fr/td_php/');
+  }
+
   $nomP = $_GET['nom'];
+  checkNomUrl($nomP,'personne');
 
   $data = array();
   $x = getPersonne($nomP)[0];
