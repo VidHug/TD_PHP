@@ -3,6 +3,7 @@
   require_once('util.php');
 
   $idFilm = $_GET['id'];
+  checkURL($idFilm,'film');
 
   $data = array();
   $data['titrePage'] = getFilm($idFilm)['titre'];

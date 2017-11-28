@@ -6,6 +6,22 @@
 
 	// Mysql($server = 'localhost', $date_base = 'base', $id = 'root', $password = '');
 
+    function checkURL($id,$table){
+        $listIds = getAllIds($table);
+        foreach ($listIds as $real){
+            if($real['id'] == $id){
+                return;
+            }
+        }
+        header('Location: http://hugovidal.fr/td_php/');
+    }
+
+    function getAllIds($table){
+        $dblink = new Mysql('db708477891.db.1and1.com','db708477891','dbo708477891','Fairytail21!');
+        $query = "select id from " . $table;
+        return $dblink->TabResSQL($query);
+    }
+
 	function formatDate($date){
 		$mois = array('janvier','février','mars','avril','mai','juin','juillet','aout','septembre','octobre','novembre','decembre');
 		$res = $date[8] . $date[9] . ' ';
@@ -27,7 +43,7 @@
 
 	function getIntroFilm(){
         $dblink = new Mysql('db708477891.db.1and1.com','db708477891','dbo708477891','Fairytail21!');
-        $query = "select f.id,titre,chemin from film f, film_has_photo fhp, photo p where f.id=fhp.id_film and fhp.id_photo=p.id and fhp.role='affiche'";
+        $query = "select f.id,titre,chemin from film f, film_has_photo fhp, photo p where f.id=fhp.id_film and fhp.id_photo=p.id and fhp.role='affiche' order by titre";
         return $res = $dblink->TabResSQL($query);
     }
 
@@ -50,7 +66,7 @@
 
     function getParticipant($role,$idFilm){
         $dblink = new Mysql('db708477891.db.1and1.com','db708477891','dbo708477891','Fairytail21!');
-        $query = "select prenom, nom, chemin, legende from personne p, film_has_personne fhp, personne_has_photo php, photo ph where p.id=fhp.id_personne and p.id=php.id_personne and php.id_photo=ph.id and role ='$role' and id_film=$idFilm";
+        $query = "select prenom, nom, chemin, legende from personne p, film_has_personne fhp, personne_has_photo php, photo ph where p.id=fhp.id_personne and p.id=php.id_personne and php.id_photo=ph.id and role ='$role' and id_film=$idFilm order by prenom";
         return $dblink->TabResSQL($query);
     }
 
@@ -66,6 +82,6 @@
 
 	function getFilmographie($nom){
         $dblink = new Mysql('db708477891.db.1and1.com','db708477891','dbo708477891','Fairytail21!');
-        $query = "select f.id, chemin, titre from photo p, film_has_photo fhp, film f, film_has_personne fhr, personne pr where pr.id=fhr.id_personne and fhr.id_film=f.id and f.id=fhp.id_film and fhp.id_photo=p.id and pr.nom='$nom' and fhp.role='affiche'";
+        $query = "select f.id, chemin, titre from photo p, film_has_photo fhp, film f, film_has_personne fhr, personne pr where pr.id=fhr.id_personne and fhr.id_film=f.id and f.id=fhp.id_film and fhp.id_photo=p.id and pr.nom='$nom' and fhp.role='affiche' order by titre";
         return $dblink->TabResSQL($query);
     }
