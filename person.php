@@ -9,7 +9,7 @@
               return;
           }
       }
-      header('Location: http://hugovidal.fr/td_php/');
+      header('Location: http://hugovidal.fr/td_film/');
   }
 
   $nomP = $_GET['nom'];
