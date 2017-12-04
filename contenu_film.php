@@ -28,19 +28,19 @@
 
 	<section class="list_img_film">
 		<h2>Quelques images du film</h2>
-    <?php
-      $tab = $data['photoFilm'];
-      foreach ($tab as $image) {
-        $largeur = getimagesize($image['chemin'])[0];
-        $hauteur = getimagesize($image['chemin'])[1];
-        if ($largeur < ($hauteur * 1.4)){
-          $class = 'img_verticale';
-        } else {
-          $class = 'img_horizontale';
-        }
-        echo '<img src="' . $image['chemin'] . '" class="' . $class . '"><label>' . $image['legende'] . '</label>' . "\n";
-      }
-    ?>
+        <?php
+          $tab = $data['photoFilm'];
+          foreach ($tab as $image) {
+            $largeur = getimagesize($image['chemin'])[0];
+            $hauteur = getimagesize($image['chemin'])[1];
+            if ($largeur < ($hauteur * 1.4)){
+              $class = 'img_verticale';
+            } else {
+              $class = 'img_horizontale';
+            }
+            echo '<img src="' . $image['chemin'] . '" class="' . $class . '"><label>' . $image['legende'] . '</label>' . "\n";
+          }
+        ?>
 	</section>
 
 	<section id="infoRea" class="info_rea">

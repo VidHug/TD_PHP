@@ -66,7 +66,7 @@
 
     function getPhotoFilm($id){
         $dblink = new Mysql('db708477891.db.1and1.com','db708477891','dbo708477891','Fairytail21!');
-        $query = "select chemin, legende from photo p, film_has_photo f where p.id=f.id_photo and f.id_film=$id";
+        $query = "select chemin, legende, role from photo p, film_has_photo f where p.id=f.id_photo and f.id_film=$id order by role";
         return $dblink->TabResSQL($query);
     }
 
