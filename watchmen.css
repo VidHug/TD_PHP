@@ -56,6 +56,17 @@ header > a:visited {
 	color: white;
 }
 
+header > button {
+	font-family: 'PoliceFilm';
+	font-size: 1vw;
+	background-color: white;
+	color: #06407b;
+	padding-top: 1vh;
+	padding-left: 1vh;
+	padding-right: 1vh;
+	border-radius: 15px;
+}
+
 /* CORPS */
 
 #titreIndex {
@@ -265,6 +276,13 @@ img {
 #menu_acteur a:hover {
 	text-decoration: underline;
 } */
+
+/* FAQ */
+
+#faq > dd {
+	margin-bottom: 2vh;
+	display: none;
+}
 
 /* FOOTER */
 

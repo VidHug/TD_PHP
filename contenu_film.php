@@ -60,6 +60,109 @@
       }
     ?>
         <a href="#header"><img id="fleche" src="image/fleche.png"></a>
+
+        <h2>La foire aux questions !</h2>
+        <dl id="faq">
+            <dt>question 1</dt>
+            <dd>
+                <dl>
+                    <dt>réponse 1 partie 1</dt>
+                    <dd>détail 1</dd>
+                    <dt>réponse 1 partie 2</dt>
+                    <dd>détail 2</dd>
+                </dl>
+            </dd>
+
+            <dt>question 2</dt>
+            <dd>
+                <dl>
+                    <dt>réponse 1 partie 1</dt>
+                    <dd>détail 1</dd>
+                    <dt>réponse 1 partie 2</dt>
+                    <dd>détail 2</dd>
+                </dl>
+            </dd>
+
+            <dt>question 3</dt>
+            <dd>
+                <dl>
+                    <dt>réponse 1 partie 1</dt>
+                    <dd>détail 1</dd>
+                    <dt>réponse 1 partie 2</dt>
+                    <dd>détail 2</dd>
+                </dl>
+            </dd>
+
+            <dt>question 4</dt>
+            <dd>
+                <dl>
+                    <dt>réponse 1 partie 1</dt>
+                    <dd>détail 1</dd>
+                    <dt>réponse 1 partie 2</dt>
+                    <dd>détail 2</dd>
+                </dl>
+            </dd>
+
+            <dt>question 5</dt>
+            <dd>
+                <dl>
+                    <dt>réponse 1 partie 1</dt>
+                    <dd>détail 1</dd>
+                    <dt>réponse 1 partie 2</dt>
+                    <dd>détail 2</dd>
+                </dl>
+            </dd>
+
+            <dt>question 6</dt>
+            <dd>
+                <dl>
+                    <dt>réponse 1 partie 1</dt>
+                    <dd>détail 1</dd>
+                    <dt>réponse 1 partie 2</dt>
+                    <dd>détail 2</dd>
+                </dl>
+            </dd>
+
+            <dt>question 7</dt>
+            <dd>
+                <dl>
+                    <dt>réponse 1 partie 1</dt>
+                    <dd>détail 1</dd>
+                    <dt>réponse 1 partie 2</dt>
+                    <dd>détail 2</dd>
+                </dl>
+            </dd>
+
+            <dt>question 8</dt>
+            <dd>
+                <dl>
+                    <dt>réponse 1 partie 1</dt>
+                    <dd>détail 1</dd>
+                    <dt>réponse 1 partie 2</dt>
+                    <dd>détail 2</dd>
+                </dl>
+            </dd>
+
+            <dt>question 9</dt>
+            <dd>
+                <dl>
+                    <dt>réponse 1 partie 1</dt>
+                    <dd>détail 1</dd>
+                    <dt>réponse 1 partie 2</dt>
+                    <dd>détail 2</dd>
+                </dl>
+            </dd>
+
+            <dt>question 10</dt>
+            <dd>
+                <dl>
+                    <dt>réponse 1 partie 1</dt>
+                    <dd>détail 1</dd>
+                    <dt>réponse 1 partie 2</dt>
+                    <dd>détail 2</dd>
+                </dl>
+            </dd>
+        </dl>
 	</section>
 
   <?php getBlock('footer.html'); ?>
