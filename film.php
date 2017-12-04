@@ -18,4 +18,4 @@
 
   getBlock('contenu_film.php',$data);
 
-  getBlock('end.html');
+  getBlock('end.php');

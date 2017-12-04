@@ -12,4 +12,4 @@
 
     getBlock('contenu_index.php',$data);
 
-    getBlock('end.html');
+    getBlock('end.php');

@@ -27,4 +27,4 @@
 
   getBlock('contenu_person.php',$data);
 
-  getBlock('end.html');
+  getBlock('end.php');
