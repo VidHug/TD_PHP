@@ -63,7 +63,7 @@
 
         <h2>La foire aux questions !</h2>
         <dl id="faq">
-            <dt>question 1</dt>
+            <dt>Question 1</dt>
             <dd>
                 <dl>
                     <dt>réponse 1 partie 1</dt>
@@ -73,7 +73,7 @@
                 </dl>
             </dd>
 
-            <dt>question 2</dt>
+            <dt>Question 2</dt>
             <dd>
                 <dl>
                     <dt>réponse 1 partie 1</dt>
@@ -83,7 +83,7 @@
                 </dl>
             </dd>
 
-            <dt>question 3</dt>
+            <dt>Question 3</dt>
             <dd>
                 <dl>
                     <dt>réponse 1 partie 1</dt>
@@ -93,7 +93,7 @@
                 </dl>
             </dd>
 
-            <dt>question 4</dt>
+            <dt>Question 4</dt>
             <dd>
                 <dl>
                     <dt>réponse 1 partie 1</dt>
@@ -103,7 +103,7 @@
                 </dl>
             </dd>
 
-            <dt>question 5</dt>
+            <dt>Question 5</dt>
             <dd>
                 <dl>
                     <dt>réponse 1 partie 1</dt>
@@ -113,7 +113,7 @@
                 </dl>
             </dd>
 
-            <dt>question 6</dt>
+            <dt>Question 6</dt>
             <dd>
                 <dl>
                     <dt>réponse 1 partie 1</dt>
@@ -123,7 +123,7 @@
                 </dl>
             </dd>
 
-            <dt>question 7</dt>
+            <dt>Question 7</dt>
             <dd>
                 <dl>
                     <dt>réponse 1 partie 1</dt>
@@ -133,7 +133,7 @@
                 </dl>
             </dd>
 
-            <dt>question 8</dt>
+            <dt>Question 8</dt>
             <dd>
                 <dl>
                     <dt>réponse 1 partie 1</dt>
@@ -143,7 +143,7 @@
                 </dl>
             </dd>
 
-            <dt>question 9</dt>
+            <dt>Question 9</dt>
             <dd>
                 <dl>
                     <dt>réponse 1 partie 1</dt>
@@ -153,7 +153,7 @@
                 </dl>
             </dd>
 
-            <dt>question 10</dt>
+            <dt>Question 10</dt>
             <dd>
                 <dl>
                     <dt>réponse 1 partie 1</dt>

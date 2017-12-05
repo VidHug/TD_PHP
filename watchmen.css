@@ -279,9 +279,21 @@ img {
 
 /* FAQ */
 
+#faq > dt {
+  font-size: 2vh;
+}
+
 #faq > dd {
 	margin-bottom: 2vh;
-	display: none;
+	/*display: none;*/
+	color: white;
+}
+
+#faq {
+    margin-top: 20px;
+	margin-bottom: 20px;
+	width: 55vw;
+	margin-left: 7vh;
 }
 
 /* FOOTER */
