@@ -279,11 +279,11 @@ img {
 
 /* FAQ */
 
-#faq > dt {
+#faq > dl > dt {
   font-size: 2vh;
 }
 
-#faq > dd {
+#faq > dl > dd {
 	margin-bottom: 2vh;
 	/*display: none;*/
 	color: white;
