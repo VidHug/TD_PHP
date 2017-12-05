@@ -20,12 +20,10 @@ $(document).ready(function(){
     $('#faq > dt').each(function () {
         $(this).data('text',$(this).html());
         $(this).data('nb',0).append(' : ' + $(this).data('nb') + ' clique(s)');
-        $(this).data('open',false);
     }).click(function () {
-        if(!$(this).data('open')) {
+        if ($(this).data('nb') == 0) {
             incrementeData($(this), 'nb', 1);
             $(this).html($(this).data('text') + ' : ' + $(this).data('nb') + ' clique(s)');
-            $(this).data('open',true);
         }
         $('#faq > dd').css('color', 'white');
         $(this).next().css('color', 'black');
