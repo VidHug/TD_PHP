@@ -59,7 +59,7 @@
         echo '<a href="person.php?nom=' . $image['nom'] . '"><img src="' . $image['chemin'] . '" class="img_pers"><label>' . $image['legende'] . '</label></a>' . "\n";
       }
     ?>
-        <a href="#header"><img id="fleche" src="image/fleche.png"></a>
+        <a href="#header"><img id="fleche" src="image/fleche.png" style="display: none;"></a>
 
         <h2>La foire aux questions !</h2>
         <dl id="faq">

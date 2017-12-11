@@ -4,6 +4,15 @@ function incrementeData(elt,key,increment){
 
 $(document).ready(function(){
 
+    $(window).scroll(function () {
+        let change = 100;
+        if($(this).scrollTop() > change){
+            $('#fleche').fadeIn(300);
+        } else if($(this).scrollTop() <= change){
+            $('#fleche').fadeOut(300);
+        }
+    });
+
     $('#hideAside').click(function () {
         $('ol').toggle(500);
     });
