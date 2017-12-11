@@ -5,7 +5,7 @@ function incrementeData(elt,key,increment){
 $(document).ready(function(){
 
     $(window).scroll(function () {
-        let change = 100;
+        let change = 150;
         if($(this).scrollTop() > change){
             $('#fleche').fadeIn(300);
         } else if($(this).scrollTop() <= change){
