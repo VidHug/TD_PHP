@@ -8,14 +8,14 @@
   		<li>Titre : <?php echo $data['infoFilm']['titre'] ?></li>
   		<li>Date de sortie : <?php echo $data['infoFilm']['dateSortie'] ?></li>
   		<li>Réalisateur : <?php
-                          $info = $data['infoRealisateur']; 
+                          $info = $data['infoRealisateur'];
                           echo $info['prenom'] . ' ' . $info['nom'];
                         ?></li>
-  		<li>Acteurs principaux : 
+  		<li>Acteurs principaux :
   			<ol>
   				<?php
             $tab = $data['infoActeur'];
-            foreach ($tab as $acteur) { 
+            foreach ($tab as $acteur) {
               echo '<li>' . $acteur['prenom'] . ' ' . $acteur['nom'] . '</li>';
             }
           ?>
@@ -61,7 +61,7 @@
     ?>
         <a href="#header"><img id="fleche" src="image/fleche.png" style="display: none;"></a>
 
-        <h2>La foire aux questions !</h2>
+        <h2 id="titreFAQ">La foire aux questions !</h2>
         <dl id="faq">
             <dl>
                 <dt>Question 1</dt>
