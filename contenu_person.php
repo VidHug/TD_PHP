@@ -1,6 +1,6 @@
 <body>
   <?php getBlock('header.php'); ?>
-  
+
 	<h1><?php
         $info = $data['infoPersonne'];
         echo $info['prenom'] . ' ' . $info['nom'];
@@ -25,6 +25,17 @@
             echo '<tr>' . "\n";
             echo '<td><a href="http://hugovidal.fr/td_film/film.php?id=' . $film['id'] . '"><img class="img_verticale" src="' . $film['chemin'] . '"></a></td>';
             echo '<td><a href="http://hugovidal.fr/td_film/film.php?id=' . $film['id'] . '">' . $film['titre'] . '</a></td>' . "\n";
+            echo '</tr>' . "\n";
+        }
+      ?>
+    </table>
+
+    <h3>Acteurs favoris</h3>
+    <table id="id_favoris">
+      <?php
+        foreach($data['favoris'] as $favori){
+            echo '<tr>' . "\n";
+            echo '<td><a href="http://hugovidal.fr/td_film/film.php?id=' . $favori['id_personne'] . '">'. $favori['id_personne'] . '</a></td>';
             echo '</tr>' . "\n";
         }
       ?>
