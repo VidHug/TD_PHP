@@ -107,13 +107,13 @@
 		$listFilm = $dblink->TabResSQL($query);
 		$listActeurs = array();
 		foreach ($listFilm as $film) {
-			$query = "select id_personne from film_has_personne where id_film=" . $film['id_film'] . " and role='acteur'";
+			$query = "select nom from film_has_personne join personne on id=id_personne where id_film=" . $film['id_film'] . " and role='acteur'";
 			$acteurs = $dblink->TabResSQL($query);
 			foreach ($acteurs as $acteur) {
-				if(array_key_exists($acteur['id_personne'], $listActeurs)){
-					++$listActeurs[$acteur['id_personne']];
+				if(array_key_exists($acteur['nom'], $listActeurs)){
+					++$listActeurs[$acteur['nom']];
 				} else {
-					$listActeurs[$acteur['id_personne']] = 1;
+					$listActeurs[$acteur['nom']] = 1;
 				}
 			}
 		}
@@ -124,4 +124,16 @@
 			}
 		}
 		return $listActeurs;
+	}
+
+	function isRealisateur($nom){
+		$dblink = new Mysql('db708477891.db.1and1.com','db708477891','dbo708477891','Fairytail21!');
+		$query = "select distinct role from film_has_personne fhp, personne p where p.id=fhp.id_personne and nom='$nom'";
+		$res = $dblink->TabResSQL($query);
+		foreach ($res as $value) {
+			if ($value['role'] == 'realisateur') {
+				return true;
+			}
+		}
+		return false;
 	}

@@ -19,7 +19,13 @@
   $x = getPersonne($nomP)[0];
   $data['titrePage'] = $x['prenom'] . ' ' . $x['nom'];
   $data['infoPersonne'] = getPersonne($nomP)[0];
-  $data['favoris'] = getFavoris($nomP);
+  $data['isRealisateur'] = isRealisateur($nomP);
+  if($data['isRealisateur']){
+      $favoris = getFavoris($nomP);
+      foreach ($favoris as $nom => $nbfois) {
+          $data['favoris'][$nom] = getPersonne($nom)[0];
+      }
+  }
   $data['filmographie'] = getFilmographie($nomP);
 
   getBlock('begin.html');

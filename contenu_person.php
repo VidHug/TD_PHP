@@ -30,16 +30,19 @@
       ?>
     </table>
 
+    <?php if ($data['isRealisateur']) { ?>
     <h3>Acteurs favoris</h3>
     <table id="id_favoris">
       <?php
-        foreach($data['favoris'] as $favori){
+        foreach($data['favoris'] as $nomf => $infos){
             echo '<tr>' . "\n";
-            echo '<td><a href="http://hugovidal.fr/td_film/film.php?id=' . $favori['id_personne'] . '">'. $favori['id_personne'] . '</a></td>';
+            echo '<td><a href="http://hugovidal.fr/td_film/person.php?nom=' . $nomf . '"><img src="' . $infos['chemin'] . '"></a></td>' . "\n";
+            echo '<td><a href="http://hugovidal.fr/td_film/person.php?nom=' . $nomf . '"><label>'. $infos['prenom'] . ' ' . $infos['nom'] . '</label></a></td>' . "\n";
             echo '</tr>' . "\n";
         }
       ?>
     </table>
+    <?php } ?>
     <a href="#header"><img id="fleche" src="image/fleche.png" style="display: none;"></a>
   </section>
 
