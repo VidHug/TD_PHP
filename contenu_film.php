@@ -63,127 +63,19 @@
 
         <h2 id="titreFAQ">La foire aux questions !</h2>
         <dl id="faq">
-            <dl>
-                <dt>Question 1</dt>
-                <dd>
-                    <dl>
-                        <dt>réponse 1 partie 1</dt>
-                        <dd>détail 1</dd>
-                        <dt>réponse 1 partie 2</dt>
-                        <dd>détail 2</dd>
-                    </dl>
-                </dd>
-            </dl>
-
-            <dl>
-                <dt>Question 2</dt>
-                <dd>
-                    <dl>
-                        <dt>réponse 1 partie 1</dt>
-                        <dd>détail 1</dd>
-                        <dt>réponse 1 partie 2</dt>
-                        <dd>détail 2</dd>
-                    </dl>
-                </dd>
-            </dl>
-
-            <dl>
-                <dt>Question 3</dt>
-                <dd>
-                    <dl>
-                        <dt>réponse 1 partie 1</dt>
-                        <dd>détail 1</dd>
-                        <dt>réponse 1 partie 2</dt>
-                        <dd>détail 2</dd>
-                    </dl>
-                </dd>
-            </dl>
-
-            <dl>
-                <dt>Question 4</dt>
-                <dd>
-                    <dl>
-                        <dt>réponse 1 partie 1</dt>
-                        <dd>détail 1</dd>
-                        <dt>réponse 1 partie 2</dt>
-                        <dd>détail 2</dd>
-                    </dl>
-                </dd>
-            </dl>
-
-            <dl>
-                <dt>Question 5</dt>
-                <dd>
-                    <dl>
-                        <dt>réponse 1 partie 1</dt>
-                        <dd>détail 1</dd>
-                        <dt>réponse 1 partie 2</dt>
-                        <dd>détail 2</dd>
-                    </dl>
-                </dd>
-            </dl>
-
-            <dl>
-                <dt>Question 6</dt>
-                <dd>
-                    <dl>
-                        <dt>réponse 1 partie 1</dt>
-                        <dd>détail 1</dd>
-                        <dt>réponse 1 partie 2</dt>
-                        <dd>détail 2</dd>
-                    </dl>
-                </dd>
-            </dl>
-
-            <dl>
-                <dt>Question 7</dt>
-                <dd>
-                    <dl>
-                        <dt>réponse 1 partie 1</dt>
-                        <dd>détail 1</dd>
-                        <dt>réponse 1 partie 2</dt>
-                        <dd>détail 2</dd>
-                    </dl>
-                </dd>
-            </dl>
-
-            <dl>
-                <dt>Question 8</dt>
-                <dd>
-                    <dl>
-                        <dt>réponse 1 partie 1</dt>
-                        <dd>détail 1</dd>
-                        <dt>réponse 1 partie 2</dt>
-                        <dd>détail 2</dd>
-                    </dl>
-                </dd>
-            </dl>
-
-            <dl>
-                <dt>Question 9</dt>
-                <dd>
-                    <dl>
-                        <dt>réponse 1 partie 1</dt>
-                        <dd>détail 1</dd>
-                        <dt>réponse 1 partie 2</dt>
-                        <dd>détail 2</dd>
-                    </dl>
-                </dd>
-            </dl>
-
-            <dl>
-                <dt>Question 10</dt>
-                <dd>
-                    <dl>
-                        <dt>réponse 1 partie 1</dt>
-                        <dd>détail 1</dd>
-                        <dt>réponse 1 partie 2</dt>
-                        <dd>détail 2</dd>
-                    </dl>
-                </dd>
-            </dl>
-
-        </dl>
+            <?php for ($i=1; $i <=10 ; ++$i) { ?>
+                <dl>
+                    <dt>Question <?php echo $i; ?></dt>
+                    <dd>
+                        <dl>
+                            <dt>réponse 1 partie 1</dt>
+                            <dd>détail 1</dd>
+                            <dt>réponse 1 partie 2</dt>
+                            <dd>détail 2</dd>
+                        </dl>
+                    </dd>
+                </dl>
+            <?php } ?>
 	</section>
 
   <?php getBlock('footer.html'); ?>
