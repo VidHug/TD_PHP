@@ -31,8 +31,8 @@
         <?php
           $tab = $data['photoFilm'];
           foreach ($tab as $image) {
-            $largeur = getimagesize($image['chemin'])[0];
-            $hauteur = getimagesize($image['chemin'])[1];
+            $largeur = getimagesize(__DIR__ . '/' . $image['chemin'])[0];
+            $hauteur = getimagesize(__DIR__ . '/' . $image['chemin'])[1];
             if ($largeur < ($hauteur * 1.4)){
               $class = 'img_verticale';
             } else {
